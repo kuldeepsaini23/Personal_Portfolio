@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-
 import { images } from '../../constants';
 import './Navbar.scss';
 
@@ -15,7 +14,7 @@ const Navbar = () => {
         <a href='#home'><img src={images.klogo} alt="logo"/><span style={{fontSize:'1.3em'}}>uldeep Saini</span></a>
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+        {['home', 'about', 'work', 'skills', "testimonial",'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             
             {/* <NavLink className="navbaritems" to={`/${item}`}>{item}</NavLink> */}
